@@ -2,7 +2,6 @@ export const siteConfig = {
   name: "Furniture Shop",
   url: "https://furniture-kigali.vercel.app/", // Replace with production domain if changed
   ogImage: "https://furniture-kigali.vercel.app/opengraph-image.png",
-
   description:
     "Furniture Shop Kigali offers high-quality sofas, beds, chairs, tables, wardrobes, office furniture, and custom-made pieces. Beautiful designs, affordable prices, and reliable delivery across Rwanda.",
 
