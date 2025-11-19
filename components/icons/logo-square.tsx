@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import LogoIcon from "@/components/icons/logo";
 import { ArmchairIcon } from "lucide-react";
 
 export default function LogoSquare({ size }: { size?: "sm" | undefined }) {

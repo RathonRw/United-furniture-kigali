@@ -20,7 +20,7 @@ export async function SiteHeader() {
           <MobileMenu menu={menu} />
         </Suspense>
       </div>
-      <div className="flex w-full items-center gap-10 justify-between">
+      <div className="flex w-full items-center justify-between gap-10">
         <div className="flex w-full">
           <Link
             className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
