@@ -20,8 +20,8 @@ export async function SiteHeader() {
           <MobileMenu menu={menu} />
         </Suspense>
       </div>
-      <div className="flex w-full items-center">
-        <div className="flex w-full md:w-1/3">
+      <div className="flex w-full items-center gap-10 justify-between">
+        <div className="flex w-full">
           <Link
             className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
             href="/"
@@ -48,18 +48,16 @@ export async function SiteHeader() {
             </ul>
           ) : null}
         </div>
-        <div className="hidden justify-center md:flex md:w-1/3">
-          <Suspense fallback={<SearchSkeleton />}>
-            <Search />
-          </Suspense>
-        </div>
-        <div className="flex items-center justify-end gap-4 md:w-1/3">
-          <Button className="text-sm" size="sm">
-            <Link href="/contact" prefetch={true}>
-              Contact Us
-            </Link>
-          </Button>
-        </div>
+        {/* <div className="hidden justify-center md:flex "> */}
+        <Suspense fallback={<SearchSkeleton />}>
+          <Search />
+        </Suspense>
+        {/* </div> */}
+        <Button className="text-sm" size="sm">
+          <Link href="/contact" prefetch={true}>
+            Contact Us
+          </Link>
+        </Button>
       </div>
     </nav>
   );

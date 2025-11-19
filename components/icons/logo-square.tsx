@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import LogoIcon from "@/components/icons/logo";
+import { ArmchairIcon } from "lucide-react";
 
 export default function LogoSquare({ size }: { size?: "sm" | undefined }) {
   return (
@@ -12,10 +13,10 @@ export default function LogoSquare({ size }: { size?: "sm" | undefined }) {
         }
       )}
     >
-      <LogoIcon
+      <ArmchairIcon
         className={clsx({
-          "h-4 w-4": !size,
-          "h-2.5 w-2.5": size === "sm",
+          "size-7": !size,
+          "size-5": size === "sm",
         })}
       />
     </div>
